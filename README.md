@@ -53,6 +53,17 @@ infrastructure/
 examples/
 ```
 
+## Phase 1 documentation
+
+- [Requirements](docs/requirements/REQUIREMENTS.md)
+- [System architecture](docs/architecture/SYSTEM_ARCHITECTURE.md)
+- [Payment lifecycle](docs/architecture/PAYMENT_LIFECYCLE.md)
+- [Database design](docs/architecture/DATABASE_DESIGN.md)
+- [ADR-001: PostgreSQL](docs/decisions/ADR-001-POSTGRESQL.md)
+- [ADR-002: Idempotency](docs/decisions/ADR-002-IDEMPOTENCY.md)
+- [ADR-003: Kafka KRaft](docs/decisions/ADR-003-KAFKA-KRAFT.md)
+- [ADR-004: Currency](docs/decisions/ADR-004-CURRENCY.md)
+
 ## Development principles
 
 - PostgreSQL—not Redis—is the correctness authority for idempotency.
@@ -64,7 +75,7 @@ examples/
 ## Roadmap
 
 - [x] Finalize Phase 1 architecture decisions.
-- [ ] Publish requirements, architecture, and ADR documentation.
+- [x] Publish requirements, architecture, and ADR documentation.
 - [ ] Implement Java payment API and PostgreSQL-backed idempotency.
 - [ ] Prove concurrent duplicate-request safety with integration tests.
 - [ ] Add transactional outbox and Kafka.
